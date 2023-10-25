@@ -6,7 +6,7 @@ In this section, describe the analysis you completed for the machine learning mo
 
 * The purpose of this analysis is to develop a machine learning model that can predict credit risks for loans, specifically loans that are healthy (with a low risk of default) and high-risk loans (with a high risk of default). 
 * The financial information included categories such as interest rate, the borrower's income, the debt to income ratio, the number of accounts a potential borrower has open, the total debt they have, and the if the potential borrower had any derogatory marks on their account (such as a late payment).  We wanted to look at the loan_status category, which tells us if the loan is healthy or is high-risk.  
-* We can see that there is an imbalance in number of obsevations of healthy loans and high-risk loans, found when we ran value_counts.  We can see that healthy loans have 75,036 observations while high-risk loans have 2.500 observations.  
+* We can see that there is an imbalance in number of obsevations of healthy loans and high-risk loans, found when we ran value_counts.  We can see that healthy loans have 75,036 observations while high-risk loans have 2.500 observations.  This is important to know because it helps guide how we handle the data.
 * The machine learning process I went through had the following stages:
   - Pre-processing where I read the data from a .csv file into a data frame
   - Training the model/Creating a logistic regregression model which then had the original data fit into the model
@@ -19,12 +19,16 @@ In this section, describe the analysis you completed for the machine learning mo
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+  * Balanced accuracy score: The balanced accuracy score for this model is 95.2%, telling us that the model is doing a good job of distinguishing between healthy loan and high-risk loan classes. This number is especially important in this model because our two classes are imbalanced.
+  * Precision: When the model predicts the healthy loan class (class 0), it is almost always correct, with a precision score of 1.0. For the high-risk loans (class 1), when the model predicts this class it is right about 85% of the time.  
+  * Recall: The model correctly identifies 99% of the actual healthy loans, and correctly identifies 91% of the actual high-risk loans.
 
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+   * Balanced accuracy score: The balanced accuracy score for this model is 99.3%, telling us that the model is doing a great job of distinguishing between healthy loan and high-risk loan classes.
+  * Precision: When the model predicts the healthy loan class, it is almost always correct, with a precision score of 1. For the high-risk loans, when the model predicts this class it is right 84% of the time.  
+  * Recall: The model correctly identifies 99% of the actual healthy loans, and correctly identifies 99% of the actual high-risk loans.
 
 ## Summary
 

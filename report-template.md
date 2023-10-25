@@ -20,6 +20,9 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 * Machine Learning Model 1:
   * Balanced accuracy score: The balanced accuracy score for this model is 95.2%, telling us that the model is doing a good job of distinguishing between healthy loan and high-risk loan classes. This number is especially important in this model because our two classes are imbalanced.
+  
+    ![2023-10-25](https://github.com/aliciahlavac/credit-risk-classification/assets/127240852/7c543080-4c2b-4225-b9ee-948e16ad4ee1)
+
   * Precision: When the model predicts the healthy loan class (class 0), it is almost always correct, with a precision score of 1.0. For the high-risk loans (class 1), when the model predicts this class it is right about 85% of the time.  
   * Recall: The model correctly identifies 99% of the actual healthy loans, and correctly identifies 91% of the actual high-risk loans.
 
@@ -27,6 +30,9 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 * Machine Learning Model 2:
    * Balanced accuracy score: The balanced accuracy score for this model is 99.3%, telling us that the model is doing a great job of distinguishing between healthy loan and high-risk loan classes.
+ 
+     ![2023-08-10 (2)](https://github.com/aliciahlavac/credit-risk-classification/assets/127240852/1128108a-658f-489c-b5cb-dd8b95e8372d)
+
   * Precision: When the model predicts the healthy loan class, it is almost always correct, with a precision score of 1. For the high-risk loans, when the model predicts this class it is right 84% of the time.  
   * Recall: The model correctly identifies 99% of the actual healthy loans, and correctly identifies 99% of the actual high-risk loans.
 

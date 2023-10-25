@@ -33,7 +33,5 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 ## Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+* Using our analysis above, it seems that model 2 is the better model.  In model 2, the recall for the high-risk loans was higher than in model 1, meaning that model 2 is better at correctly identifying high-risk loans.  
+* Performance definitely depends on the problem we are trying to solve.  We perhaps want to focus on predicting the high-risk loan class (the minority class), meaning we would want to minimize false negatives even if that means accepting more false positives.  It's also important to note that in credit risk assessment, it's important to maximize recall (correctly identifying high-risk applicants), but at the same time maximize recall (and thus minimize the number of low-risk applicants classified as high risk applicants). 

@@ -1,9 +1,9 @@
 # credit-risk-classification
 Module 20 Challenge
 
-## Overview of the Analysis
+# Module 12 Report Template
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+## Overview of the Analysis
 
 * The purpose of this analysis is to develop a machine learning model that can predict credit risks for loans, specifically loans that are healthy (with a low risk of default) and high-risk loans (with a high risk of default). 
 * The financial information included categories such as interest rate, the borrower's income, the debt to income ratio, the number of accounts a potential borrower has open, the total debt they have, and the if the potential borrower had any derogatory marks on their account (such as a late payment).  We wanted to look at the loan_status category, which tells us if the loan is healthy or is high-risk.  
@@ -11,7 +11,7 @@ In this section, describe the analysis you completed for the machine learning mo
 * The machine learning process I went through had the following stages:
   - Pre-processing where I read the data from a .csv file into a data frame
   - Training the model/Creating a logistic regregression model which then had the original data fit into the model
-  - Used testing feature data to make predictions on testing data labels using the fitted model
+  - Used testing features to make predictions on testing labels with the fitted model
   - Finally, I evaluated how well the model performed by calculating statistics like balanced accuracy scores, confusion matrices, and classifiction reports.
 * I used LogisticRegression on the original data that was fitted.  Then, I used the RandomOverSampler module to resample the data.  This was done to address the class imbalance we saw in the original fitted data.
 
@@ -39,6 +39,5 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Using our analysis above, it seems that model 2 is the better model.  In model 2, the recall for the high-risk loans was higher than in model 1, meaning that model 2 is better at correctly identifying high-risk loans.  
-* Performance definitely depends on the problem we are trying to solve.  We perhaps want to focus on predicting the high-risk loan class (the minority class), meaning we would want to minimize false negatives even if that means accepting more false positives.  It's also important to note that in credit risk assessment, it's important to maximize recall (correctly identifying high-risk applicants), but at the same time maximize recall (and thus minimize the number of low-risk applicants classified as high risk applicants). 
+* Using our analysis above, it seems that model 2 is the better model.  In using model 2, the recall for the high-risk loans was higher than in using model 1, meaning that model 2 is better at correctly identifying high-risk loans.  In addition, model 2 has a better balanced accuracy score, meaning this model does a better job at distinguishing between the two classes in the dataset.  In addition, model 1 had highly imbalanced classes, where model 2 dealt with this issue.  While it is true that model 1 had a higher precision for the high-risk loan class (meaning that it may produce fewer false positives), the trade-off between precision and recall isn't enough to sway in favor for model 1.  For those reasons, model 2 is better.  
+* Performance definitely depends on the problem we are trying to solve.  We perhaps want to focus on predicting the high-risk loan class (the minority class), meaning we would want to minimize false negatives even if that means accepting more false positives.  It's also important to note that in credit risk assessment, it's often important to maximize precision (correctly identifying high-risk applicants), but at the same time maximize recall (and thus minimize the number of low-risk applicants classified as high risk applicants). In this case, the model is heavily dependent on the class you are trying to analyze and the problem you are trying to solve.  

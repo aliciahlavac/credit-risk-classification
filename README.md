@@ -3,7 +3,7 @@ Module 20 Challenge
 
 ## Overview of the Analysis
 
-* The purpose of this analysis is to develop a machine learning model that can predict credit risks for loans, specifically loans that are healthy (with a low risk of default) and high-risk loans (with a high risk of default). 
+* The purpose of this analysis is to develop a machine learning model that can predict credit risks for loans, specifically loans that are healthy (with a low risk of default) and high-risk loans (with a high risk of default). This was done in a [Jupyter Notebook File](https://github.com/aliciahlavac/credit-risk-classification/blob/main/credit_risk_classification.ipynb). 
 * The financial information included categories such as interest rate, the borrower's income, the debt to income ratio, the number of accounts a potential borrower has open, the total debt they have, and the if the potential borrower had any derogatory marks on their account (such as a late payment).  We wanted to look at the loan_status category, which tells us if the loan is healthy or is high-risk.  
 * We can see that there is an imbalance in number of obsevations of healthy loans and high-risk loans, found when we ran value_counts.  We can see that healthy loans have 75,036 observations while high-risk loans have 2.500 observations.  This is important to know because it helps guide how we handle the data.
 * The machine learning process I went through had the following stages:
